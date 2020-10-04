@@ -77,9 +77,18 @@ a {
   text-decoration: none;
 color: #333333;
 font-size: 18px;
+
 }
+
 a:hover {
-  color: #6633ff;
+  color: hotpink;
+}
+.nav a, .nav-2 a{
+  text-transform: uppercase;
+}
+.footer-link-last a{
+  color: #333333;
+  font-size: 14px;
 }
 
 /* main Styles */
@@ -87,6 +96,7 @@ a:hover {
   background-color: white;
   width: 100%;
   text-align: center;
+
 
 }
 .card{
@@ -115,7 +125,12 @@ a:hover {
   text-transform: uppercase;
   font-size: 16px;
 }
-/*Footer start here*/
+/*Top Footer start here*/
+.top-footer{
+  border-bottom: 1px solid #cccccc;
+  width: 92%;
+  margin: auto;
+}
 .top-footer p{
   padding: 0px 30px 0px 30px;
   line-height: 1.5;
@@ -128,4 +143,258 @@ a:hover {
 }
 address{
   padding-bottom: 40px;
+}
+
+/*bottom Footer start here*/
+
+
+
+.second-nav {
+  width: 92%;
+  margin: auto;
+
+  min-height: 30px;
+padding: 30px 0px 30px 0px;
+
+  text-align: center;
+}
+.nav-2 {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav-2 .name-2 {
+    display: block;
+    margin-right: auto;
+    color: black;
+}
+.second-nav-2 li {
+  padding: 5px 10px 10px 10px;
+}
+.second-nav-2 a {
+  transition: all .5s;
+}
+.second-nav-2 a:hover {
+  color: white
+}
+.footer-link{
+  display: none;
+}
+/*Style for medium screen*/
+
+@media screen and (min-width: 768px) {
+
+header{
+  width: 92%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:flex-start;
+
+  padding-bottom: 40px;
+
+}
+a {
+  text-decoration: none;
+color: #333333;
+font-size: 17px;
+
+}
+.profile-picture{
+  order: 2;
+  flex-basis: 38%;
+}
+.profile-text{
+  order: 1;
+  flex-basis: 62%;
+  text-align: left;
+
+  padding: 0;
+  margin: 0;
+
+
+}
+.header-text{
+  font-size: 19.8px;
+  margin: 0;
+  padding-right: 40px;
+
+
+}
+.nav {
+  display: flex;
+  justify-content:center;
+  flex-wrap: wrap;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 50px;
+}
+.name{
+  display: block;
+  width: 100%;
+}
+.nav li {
+display: inline-block;
+background-color: #f2f2f2;
+padding: 10px 30px 10px 30px;
+margin-bottom: 6px;
+}
+
+.flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: flex-start;
+  width: 100%;
+  margin: auto;
+}
+.card{
+  width: 45%;
+  margin: 8px;
+
+
+}
+.card-1{
+  flex-basis: 100%;
+}
+.card p{
+  padding: 0px 22px 0px 22px;
+}
+.footer-link-last{
+  display: none;
+}
+.footer-link{
+  display: flex;
+}
+.nav-2 li {
+  padding: 5px 10px 10px 10px;
+}
+.name-2{
+  font-size: 18px;
+}
+.top-footer{
+
+  width: 80%;
+  margin:auto;
+
+}
+.top-footer-text{
+  font-size: 20px;
+  margin-bottom: 50px;
+
+}
+.nav-2 a{
+ font-size: 16px;
+}
+}
+@media screen and (min-width: 1024px) {
+  a {
+
+  font-size: 18px;
+
+  }
+  .nav-2 a{
+   font-size: 16px;
+
+  }
+  .flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: flex-start;
+    width: 95%;
+    margin: auto;
+  }
+  .card{
+    width: 30%;
+    margin: 8px;
+
+
+  }
+  .top-footer{
+    border-bottom: 1px solid #cccccc;
+    width:85%;
+    margin: auto;
+
+  }
+  .second-nav{
+    width: 85%;
+    padding: 45px 0px 45px 0px;
+
+  }
+.top-footer p {
+
+  font-size: 22px;
+  padding: 0px 90px 0px 90px;
+}
+
+
+header{
+
+  padding-bottom: 60px;
+
+}
+.profile-picture{
+  order: 2;
+  flex-basis: 45%;
+}
+.profile-text{
+  order: 1;
+  flex-basis: 55%;
+  text-align: left;
+
+  padding: 0;
+  margin: 0;
+
+
+}
+.header-text{
+  font-size: 22px;
+  margin: 0;
+  padding-right: 40px;
+
+
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-between;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 40px 0px 40px 0px;
+}
+
+.nav .name {
+display: block;
+width:auto;
+    margin-right: auto;
+    color: black;
+}
+nav- li {
+  padding: 5px 10px 10px 10px;
+}
+.nav a {
+  transition: all .5s;
+}
+.nav a:hover {
+  color: white
+}
+
+}
+@media screen and (min-width: 1440px) {
+.wrapper{
+  width: 60%;
+}
+
 }
