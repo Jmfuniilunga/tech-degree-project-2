@@ -7,20 +7,114 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', helvetica, "poppins";
   color: #222;
   background: #f2f2f2;
+  line-height: 1.5;
+}
+
+
+
+
+.my-skills-box{
+  background-color: white;
+  width: 100%;
+    text-align: left;
+
+  margin-top: 20px;
+}
+.my-skills{
+  flex-basis: 100%;
+  text-align: center;
 
 }
+.my-skills p{
+  color: #808080;
+  padding-right:30px;
+  padding-left: 30px;
+}
+.my-skills h4{
+color: #333333;
+}
+
+
+
+.my-skills-1{
+
+  padding: 10px 25px 25px 25px;
+
+
+}
+
+.skill-box{
+
+  background-color: red;
+  background-color: #ff8080;
+}
+
+  .mysk{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    height: 30px;
+    margin-bottom: 3px;
+  }
+  .mysk p{
+    font-size: 14px;
+    padding-right: 8px;
+    padding-left: 8px;
+    color:white;
+  }
+
+
+  .html {
+  width: 85%;
+  background-color: #39ac39;
+  }
+  .css {width: 80%;
+  background-color: #ff5c33;
+  }
+  .js {
+  width: 65%;
+  background-color: #1a1aff;
+  }
+  .jquery {
+  width: 70%;
+  background-color: #ff9900;
+  }
+  .python {
+  width: 60%;
+  background-color: #808080;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .wrapper{
 
 width: 100%;
 margin: auto;
 }
 .main-nav {
-  width: 92%;
+  width: 100%;
   margin: auto;
   background: #f2f2f2;
+
 
 
 
@@ -34,33 +128,56 @@ margin: auto;
   margin: 0 auto;
   padding: 0;
 
+background-color: #003366;
+
+    padding: 10px;
+
+
 }
 header {
    text-align: center;
-   line-height: 1.5;
+
    color: #808080;
    margin-top: 40px;
+
+
 
 }
 .nav .name {
     display: block;
-    color: #333333;
+
       background: #f2f2f2;
     font-weight: bolder;
     font-size: 30px;
     padding: 20px 0px 20px 0px;
+  background-color: #003366;
+    color: white;
+    font-weight: normal;
+
+
 
 }
 .profile-picture{
   width: 70%;
   margin: auto;
+  padding: 25px;
 }
 .profile-picture img{
 width: 100%;
 height: auto;
+border-radius: 50%;
+  border: 1px solid #f2f2f2;
+  height: 180px;
+
+
+
+
+  transition: all .5s;
+  width: 180px;
 }
 .profile-text{
 padding: 0px 30px 0px 30px;
+
 }
 .nav li {
 display: block;
@@ -104,12 +221,15 @@ a:hover {
   margin: auto;
   text-align: center;
    color: #808080;
-   line-height: 1.5;
+
    border: 1px solid #fff;
 
 }
 .card h3, .card h4 {
      color: #333333;
+}
+.card p{
+  padding: 0px 40px 0px 40px;
 }
 .card img{
   width: 100%;
@@ -128,12 +248,13 @@ a:hover {
 /*Top Footer start here*/
 .top-footer{
   border-bottom: 1px solid #cccccc;
-  width: 92%;
+  width: 75%;
+
   margin: auto;
 }
 .top-footer p{
   padding: 0px 30px 0px 30px;
-  line-height: 1.5;
+
 
 }
 .top-footer h3{
@@ -150,7 +271,7 @@ address{
 
 
 .second-nav {
-  width: 92%;
+  width: 80%;
   margin: auto;
 
   min-height: 30px;
@@ -205,13 +326,24 @@ color: #333333;
 font-size: 17px;
 
 }
+.nav a {
+  color:white;
+    transition: all .5s;
+}
+
 .profile-picture{
   order: 2;
-  flex-basis: 38%;
+  flex-basis: 25%;
+  border: none;
+  padding: 0;
+
+}
+a:hover {
+  color: grey;
 }
 .profile-text{
   order: 1;
-  flex-basis: 62%;
+  flex-basis: 75%;
   text-align: left;
 
   padding: 0;
@@ -237,15 +369,16 @@ font-size: 17px;
   margin-bottom: 50px;
 }
 .name{
-  display: block;
+  display: inline;
   width: 100%;
 }
 .nav li {
 display: inline-block;
-background-color: #f2f2f2;
+  background-color: #003366;
 padding: 10px 30px 10px 30px;
 margin-bottom: 6px;
 }
+
 
 .flex{
   display: flex;
@@ -294,6 +427,15 @@ margin-bottom: 6px;
 .nav-2 a{
  font-size: 16px;
 }
+.my-skills-box{
+display: flex;
+justify-content: center;
+}
+
+.my-skills{
+  flex-basis: 85%;
+
+}
 }
 @media screen and (min-width: 1024px) {
   a {
@@ -305,6 +447,10 @@ margin-bottom: 6px;
    font-size: 16px;
 
   }
+  a:hover {
+    color: grey;
+  }
+
   .flex{
     display: flex;
     flex-direction: row;
@@ -340,12 +486,14 @@ margin-bottom: 6px;
 
 header{
 
-  padding-bottom: 60px;
+  padding-bottom: 50px;
 
 }
 .profile-picture{
   order: 2;
   flex-basis: 45%;
+  border: 1px solid #ccc;
+  padding: 20px;
 }
 .profile-text{
   order: 1;
@@ -372,7 +520,10 @@ header{
   font-weight: 700;
   list-style-type: none;
   margin: 0 auto;
-  padding: 40px 0px 40px 0px;
+    margin-bottom: 60px;
+    padding: 40px 0px 30px 0px;
+      box-shadow: 0px 5px 5px #003366;
+  /*padding: 40px 0px 40px 0px;*/
 }
 
 .nav .name {
@@ -380,21 +531,110 @@ display: block;
 width:auto;
     margin-right: auto;
     color: black;
+    color: white;
+    padding-left:25px;
+
+
 }
+
+
 nav- li {
   padding: 5px 10px 10px 10px;
 }
 .nav a {
   transition: all .5s;
 }
-.nav a:hover {
-  color: white
+
+
+.my-skills-box{
+  background-color: white;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 20px;
 }
+.my-skills{
+  flex-basis: 85%;
+}
+
+.my-skills-1{
+  order:2;
+  text-align: center;
+
+  padding-left:20px;
+  padding-right: 20px;
+
+}
+
+
+
+  .mysk{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    height: 30px;
+    margin-bottom: 3px;
+  }
+  .mysk p{
+    font-size: 14px;
+    padding-right: 8px;
+    padding-left: 8px;
+    color:white;
+  }
+
+
+  .html {
+  width: 85%;
+  background-color: #39ac39;
+  }
+  .css {width: 80%;
+  background-color: #ff5c33;
+  }
+  .js {
+  width: 65%;
+  background-color: #1a1aff;
+  }
+  .jquery {
+  width: 70%;
+  background-color: #ff9900;
+  }
+  .python {
+  width: 60%;
+  background-color: #808080;
+  }
+
+
+
+
+
+
+
+
+
+
 
 }
 @media screen and (min-width: 1440px) {
 .wrapper{
-  width: 60%;
+  width: 65%;
+  margin: auto;
+
+
 }
 
+header{
+
+  width: 95%;
+}
+.my-skills{
+  flex-basis: 75%;
+}
+.top-footer {
+  width: 85%;
+
+}
 }

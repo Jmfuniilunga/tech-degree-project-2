@@ -11,16 +11,18 @@
 
     <nav class="main-nav">
         <ul class="nav">
-          <li class="name">Joel Ilunga</li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="aboutme.html">Portfolio</a></li>
-          <li><a href="contactme.html">Contact</a></li>
+          <li class="name" id="the-name">Joel Ilunga</li>
+          <li><a href="#the-home">Home</a></li>
+          <li><a href="#portfolio-card">Portfolio</a></li>
+          <li><a href="#the-my-skills-box">Expertise</a></li>
+
+          <li><a href="#the-top-footer">Contact</a></li>
         </ul>
     </nav>
 
     <header>
       <aside class="profile-picture">
-        <img src="img/responsive-layout-profile.png" alt="Profile picture">
+        <img src="img/myavatar.jpg" alt="Profile picture">
       </aside>
       <aside class="profile-text">
         <p class="header-text">
@@ -35,7 +37,7 @@
 
     <main class="flex">
 
-      <section class="card card-1">
+      <section class="card card-1" id="portfolio-card">
       <h3>Portfolio</h3>
       </section>
 
@@ -91,7 +93,45 @@
       </section>
 
     </main>
-    <footer class="top-footer">
+
+
+
+<div class="my-skills-box" id="the-my-skills-box">
+    <div class="my-skills  my-skills-1">
+         <h4>My Skills</h4>
+         <p>I have a solid knowledge of HTML and CSS, a good understanding of Javascript and JQuery and possess
+         a fairly command of Python. Below is a list of my current skills: </p>
+   <div class="skill-box">
+     <div class="mysk html"><p>HTML</p><p>85%</p></div>
+   </div>
+   <div class="skill-box">
+     <div class="mysk css"><p>CSS</p><p>80%</p></div>
+   </div>
+   <div class="skill-box">
+     <div class="mysk js"><p>Js</p><p>65%</p></div>
+   </div>
+   <div class="skill-box">
+     <div class="mysk jquery"><p>JQuery</p><p>60%</p></div>
+   </div>
+
+   <div class="skill-box">
+     <div class="mysk python"><p>Python</p><p>50%</p></div>
+
+      </div>
+    </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <footer class="top-footer" id="the-top-footer">
       <h3>Contact</h3>
     <p class="top-footer-text">If you are interested in chatting or want more information about what I've been working on,
     I would love to hear from you.</p>
@@ -104,15 +144,15 @@
     <div class="second-nav">
 <ul class="nav-2">
   <li class="name-2">Joel Ilunga</li>
-  <li class="footer-link"><a href="#">Home</a></li>
-  <li class="footer-link"><a href="#">Portfolio</a></li>
-  <li class="footer-link"><a href="#">Contact</a></li>
-  <li class="footer-link-last"><a href="#">Back to top</a></li>
+  <li class="footer-link"><a href="#the-name">Home</a></li>
+  <li class="footer-link"><a href="#portfolio-card">Portfolio</a></li>
+    <li class="footer-link"><a href="#the-my-skills-box">Expertise</a></li>
+  <li class="footer-link"><a href="#the-top-footer">Contact</a></li>
+  <li class="footer-link-last"><a href="#the-name">Back to top</a></li>
 </ul>
 </div>
-    <footer>
 
-    </footer>
   </div>
+
   </body>
   </html>
