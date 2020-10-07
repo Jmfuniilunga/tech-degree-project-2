@@ -118,14 +118,7 @@ margin: auto;
   width: 100%;
   margin: auto;
   background: #f2f2f2;
-
-
-
-
-
-
-  text-align: center;
-
+  
 }
 .nav {
   font-weight: 700;
@@ -206,7 +199,7 @@ margin-bottom: 6px;
 
 a {
   text-decoration: none;
-color: #333333;
+color: black;
 font-size: 18px;
 
 }
@@ -314,8 +307,8 @@ padding: 30px 0px 30px 0px;
 .second-nav-2 a {
   transition: all .5s;
 }
-.second-nav-2 a:hover {
-  color: white
+.second-nav a:hover {
+  color: hotpink;
 }
 .footer-link{
   display: none;
@@ -348,6 +341,9 @@ font-size: 17px;
 
     transition: all .5s;
 }
+.nav .name{
+  font-size: 27px;
+}
 
 .profile-picture{
   order: 2;
@@ -360,7 +356,7 @@ text-align: right;
 
 }
 a:hover {
-  color: grey;
+  color: white;
 }
 .profile-text{
   order: 1;
@@ -479,7 +475,7 @@ justify-content: center;
 
   }
   a:hover {
-    color: grey;
+    color: white;
   }
 
   .flex{
@@ -520,20 +516,26 @@ header{
   padding-bottom: 50px;
 
 }
+.nav .name {
+
+font-size: 28px;
+
+}
 .profile-picture{
   order: 2;
-  flex-basis: 45%;
+  flex-basis:50%;
 
+  padding: 0px 20px 20px 0px;
 
-  padding: 20px;
 }
 .profile-text{
   order: 1;
-  flex-basis: 55%;
+  flex-basis: 50%;
   text-align: left;
 
-  padding: 0;
-  margin: 0;
+  padding:10px 0px 10px 20px;
+  margin-left:20px;
+
 
 
 }
@@ -552,9 +554,9 @@ header{
   font-weight: 700;
   list-style-type: none;
   margin: 0 auto;
-    margin-bottom: 7px;
-    padding: 40px 0px 30px 0px;
-      box-shadow: 0px 5px 5px #003366;
+
+    padding: 40px 0px 10px 0px;
+
   /*padding: 40px 0px 40px 0px;*/
 }
 
@@ -563,7 +565,7 @@ display: block;
 width:auto;
     margin-right: auto;
     color: black;
-    color: white;
+    color: #ccc;
     padding-left:25px;
 
 
@@ -661,13 +663,17 @@ nav- li {
 
 header{
 
-  width: 95%;
+  width: 100%;
 }
 .my-skills{
   flex-basis: 75%;
 }
 .top-footer {
   width: 85%;
+
+}
+.profile-picture{
+  margin-right: 40px;
 
 }
 }
