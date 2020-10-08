@@ -118,7 +118,7 @@ margin: auto;
   width: 100%;
   margin: auto;
   background: #f2f2f2;
-  
+
 }
 .nav {
   font-weight: 700;
@@ -215,10 +215,13 @@ a:hover {
   font-size: 14px;
 }
 
+.top-footer a:hover{
+  color: hotpink;
+}
 /* main Styles */
 .flex{
   background-color: white;
-border: 1px solid #f2f2f2;
+
   width: 100%;
   text-align: center;
 
@@ -256,12 +259,15 @@ border: 1px solid #f2f2f2;
 /*Top Footer start here*/
 .top-footer{
   border-bottom: 1px solid #cccccc;
-  width: 75%;
+  width: 100%;
 
   margin: auto;
+    background-color:;
 }
 .top-footer p{
   padding: 0px 30px 0px 30px;
+
+
 
 
 }
@@ -317,7 +323,7 @@ padding: 30px 0px 30px 0px;
 
 @media screen and (min-width: 768px) {
 
-header{
+.header-wrapper{
   width: 100%;
   margin: auto;
   display: flex;
@@ -356,7 +362,7 @@ text-align: right;
 
 }
 a:hover {
-  color: white;
+  color: black;
 }
 .profile-text{
   order: 1;
@@ -368,9 +374,10 @@ a:hover {
 
   padding:10px 0px 10px 20px;
 
-  background-color: white;
-  opacity: 0.5;
+  background-color: #f2f2f2;
+  opacity: 0.3;
   color:black;
+
 
 
 }
@@ -440,19 +447,23 @@ margin-bottom: 6px;
 }
 .top-footer{
 
-  width: 80%;
+  width: 85%;
   margin:auto;
+    border-top: 1px solid #cccccc;
+
 
 }
+
 .top-footer-text{
-  font-size: 20px;
+  font-size: 17px;
   margin-bottom: 40px;
 
 
 }
 
 .nav-2 a{
- font-size: 16px;
+ font-size: 15px;
+
 }
 .my-skills-box{
 display: flex;
@@ -460,9 +471,12 @@ justify-content: center;
 }
 
 .my-skills{
-  flex-basis: 85%;
+  flex-basis: 90%;
+  border-top: 1px solid #cccccc;
+
 
 }
+
 }
 @media screen and (min-width: 1024px) {
   a {
@@ -486,6 +500,7 @@ justify-content: center;
     align-items: flex-start;
     width: 95%;
     margin: auto;
+    margin-top: 30px;
   }
   .card{
     width: 30%;
@@ -525,7 +540,7 @@ font-size: 28px;
   order: 2;
   flex-basis:50%;
 
-  padding: 0px 20px 20px 0px;
+  padding: 0px 80px 20px 0px;
 
 }
 .profile-text{
@@ -582,17 +597,20 @@ nav- li {
 
 .my-skills-box{
   background-color: white;
-  width: 95%;
+  width: 90%;
   margin: auto;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
   margin-top: 20px;
-  border: 1px solid #f2f2f2;
+  border-top: 1px solid rgb(230, 230, 230);
+  border-bottom: 1px solid 	rgb(230, 230, 230);
+
 }
 .my-skills{
   flex-basis: 85%;
+  border:none;
 }
 
 .my-skills-1{
@@ -604,7 +622,10 @@ nav- li {
 
 }
 
-
+.top-footer{
+  border: none;
+  border-bottom: 1px solid 	rgb(230, 230, 230);
+}
 
   .mysk{
     display: flex;
@@ -641,39 +662,84 @@ nav- li {
   width: 60%;
   background-color: #808080;
   }
+}
 
-
-
-
-
-
-
-
-
+@media screen and (min-width: 1440px) {
+.wrapper{
+  width: 75%;
+  margin: auto;
+  background-color: ;
 
 
 }
-@media screen and (min-width: 1440px) {
-.wrapper{
-  width: 65%;
-  margin: auto;
-
-
+.main-nav{
+  width: 100%;
+  text-align: center;
+  background-color: black;
+}
+.nav .name{
+  padding-left: 0px;
+}
+.nav{
+  padding-right: 0px;
 }
 
 header{
 
   width: 100%;
+  display: flex;
+  flex-direction: row;
+    justify-content: center;
 }
 .my-skills{
   flex-basis: 75%;
+
+}
+.header-wrapper{
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
 }
 .top-footer {
   width: 85%;
 
 }
-.profile-picture{
-  margin-right: 40px;
+.profile-picture {
+
+  flex-basis: 50%;
+
+  padding-right: 0px;
+  margin-right: 120px;
+
+
+
 
 }
+.profile-picture img{
+    border-radius: 2%;
+    width: 240px;
+    height: 240px;
+  box-shadow: 20px 20px 50px 20px hotpink;
+}
+.profile-text {
+  border: 1px solid white;
+  flex-basis: 40%;
+  height: 140px;
+  margin-left: 0px;
+
+
+}
+
+
+.nav{
+
+  width: 75%;
+}
+
+
+
+
+
 }
