@@ -183,6 +183,66 @@ address{
 .footer-link{
   display: none;
 }
+/*My skills stylt*/
+.my-skills-box{
+  background-color: white;
+  width: 100%;
+  text-align: left;
+  margin-top: 20px;
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 40px;
+}
+.my-skills{
+  flex-basis: 100%;
+  text-align: center;
+}
+.my-skills p{
+  padding-right:30px;
+  padding-left: 30px;
+}
+.my-skills h4{
+color: #333333;
+}
+.my-skills-1{
+  padding: 10px 25px 25px 25px;
+}
+.skill-box{
+  background-color: red;
+  background-color: #ff8080;
+}
+.mysk{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center;
+  height: 30px;
+  margin-bottom: 3px;
+  }
+  .mysk p{
+    font-size: 14px;
+    padding-right: 8px;
+    padding-left: 8px;
+    color:white;
+  }
+.html {
+  width: 85%;
+  background-color: #39ac39;
+  }
+  .css {width: 80%;
+  background-color: #ff5c33;
+  }
+  .js {
+  width: 65%;
+  background-color: #1a1aff;
+  }
+  .jquery {
+  width: 70%;
+  background-color: #ff9900;
+  }
+  .python {
+  width: 60%;
+  background-color: #808080;
+}
 /*Style for medium screen*/
 
 @media screen and (min-width: 768px) {
@@ -312,66 +372,7 @@ justify-content: center;
   flex-basis: 90%;
   border-top: 1px solid #cccccc;
 }
-/*My skills stylt*/
-.my-skills-box{
-  background-color: white;
-  width: 100%;
-  text-align: left;
-  margin-top: 20px;
-  border-bottom: 1px solid #f2f2f2;
-  padding-bottom: 40px;
-}
-.my-skills{
-  flex-basis: 100%;
-  text-align: center;
-}
-.my-skills p{
-  padding-right:30px;
-  padding-left: 30px;
-}
-.my-skills h4{
-color: #333333;
-}
-.my-skills-1{
-  padding: 10px 25px 25px 25px;
-}
-.skill-box{
-  background-color: red;
-  background-color: #ff8080;
-}
-.mysk{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items:center;
-  height: 30px;
-  margin-bottom: 3px;
-  }
-  .mysk p{
-    font-size: 14px;
-    padding-right: 8px;
-    padding-left: 8px;
-    color:white;
-  }
-.html {
-  width: 85%;
-  background-color: #39ac39;
-  }
-  .css {width: 80%;
-  background-color: #ff5c33;
-  }
-  .js {
-  width: 65%;
-  background-color: #1a1aff;
-  }
-  .jquery {
-  width: 70%;
-  background-color: #ff9900;
-  }
-  .python {
-  width: 60%;
-  background-color: #808080;
-}
+
 }
 @media screen and (min-width: 1024px) {
   a {
